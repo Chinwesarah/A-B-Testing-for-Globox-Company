@@ -15,7 +15,8 @@ Postgresql - Used for data anlysis
 Google spreadsheet - Used for hypothesis testing  
 Tableau - Used for data visualization
 ## Data sources
-Please refer to the attached Microsoft Word document for the Entity Relationship Diagram and Data Dictionary
+1. Google spreadsheet( for the extracted table): https://docs.google.com/spreadsheets/d/1Q7qtdndJwJrzMmrkker17K1XQJRPFs-yMrqHFfi5tHA/edit?usp=drive_link
+2. Please refer to the attached Microsoft Word document for the original Entity Relationship Diagram and Data Dictionary
 ## Data Analysis
 SQL code to extract the user ID, country, gender, device type, test group, and whether or not they converted (spent > $0) and how much they spent in total ($0+).
 ```sql
