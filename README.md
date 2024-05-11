@@ -32,7 +32,7 @@ id, groups.device, "group"
 
 The data gotten from the above query was used for the following visualizations in tableau:
 
-1. Compare the conversion rate and average amount spent between the test groups.
+1. Compare the conversion rate and average amount spent between the test groups. 
 2. Visualize the distribution of the amount spent per user for each group.
 3. The relationship between the test metrics (conversion rate and average amount spent) and the user’s device.
 4. The relationship between the test metrics (conversion rate and average amount spent) and the user’s gender.
