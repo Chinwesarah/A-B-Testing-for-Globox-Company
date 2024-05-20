@@ -11,9 +11,9 @@ spent per user.
 5. 955 users made purchase in group A and 1,139 in group B.
 6. The total amount spent by customers in group B was higher than group A with $1,269  The conversion rate in group B was higher than group A with 0.71%
 ## Tools
-Postgresql - Used for data anlysis  
-Google spreadsheet - Used for hypothesis testing  
-Tableau - Used for data visualization
+Postgresql - Used for data anlysis.  
+Google spreadsheet - Used for hypothesis testing.  
+Tableau - Used for data visualization.  
 Microsoft Powerpoint - Used for report presentation, kindly see attached.  
 
 ## Data sources
