@@ -51,7 +51,36 @@ See here: https://public.tableau.com/views/Visualizationstoexploretherelationshi
   **Link to sample size calculator used for the power analysis:**  
 **Conversion rate:** https://www.statsig.com/calculator?mde=10&bcr=3.92&twoSided=true&splitRatio=0.5&alpha=0.05&power=0.8  
 **Average amount spent per user:** https://www.gigacalculator.com/calculators/power-sample-size-calculator.php  
-calcType=ss&eType=groups&type=cont&sType=cont&hyp=sup&diffType=abs&alpha=0.05&power=0.8&groups=1&ratio=1&inputType=prop&ssize=&prop=&mean=3.375&stdev=25.936&sinputType=prop&effect=0.3375&margin=0
+calcType=ss&eType=groups&type=cont&sType=cont&hyp=sup&diffType=abs&alpha=0.05&power=0.8&groups=1&ratio=1&inputType=prop&ssize=&prop=&mean=3.375&stdev=25.936&sinputType=prop&effect=0.3375&margin=0  
+
+## RESULTS
+# Hypothesis Tests
+**Conversion rate:**
+The p-value obtained from our analysis is **0.0001**, which is much smaller than the significance level of 0.05. This low p-value indicates that the observed difference in conversion rates between the two groups is highly unlikely to be due to random chance alone. Therefore, we can confidently say that there is a statistically significant difference in conversion rates between the two groups.  
+
+**Average amount spent per user:**
+The p-value we obtained from this analysis is **0.944**, which is much larger than the significance level of 0.05. This high p-value suggests that the observed difference in the average amount spent per user between the two groups could likely be due to random chance. Consequently, we cannot confidently say there is a significant difference in the spending behaviour between the two groups.  
+
+## Power Analysis  
+
+For a difference/effect size of 10% and Power of 80%, we will require:  
+
+**Conversion rate:** A sample size of **70,000**  
+
+**Average Amount spent per user:** A sample size of **146, 046**  
+
+This means we cannot confidently say that we have an 80% chance of detecting a 10% difference between the 2 groups with our current sample size of **48,943.**  
+
+## RECOMMENDATIONS  
+
+Our recommendation is that the banner should be launched. This is because of the following reasons:
+
+1. One of the metrics (conversion rate) showed a statically significant increase in the
+treatment group.
+2. The cost required to launch the banner is not expensive.
+   
+We believe this approach strikes a balance between statistical rigor and the need for practical, impactful decision-making.
+
 
 
 
