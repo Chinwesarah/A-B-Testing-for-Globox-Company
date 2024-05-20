@@ -14,6 +14,8 @@ spent per user.
 Postgresql - Used for data anlysis  
 Google spreadsheet - Used for hypothesis testing  
 Tableau - Used for data visualization
+Microsoft Powerpoint - Used for report presentation, kindly see attached.  
+
 ## Data sources
 1. Google spreadsheet( for the extracted table): https://docs.google.com/spreadsheets/d/1Q7qtdndJwJrzMmrkker17K1XQJRPFs-yMrqHFfi5tHA/edit?usp=drive_link
 2. Please refer to the attached Microsoft Word document for the original Entity Relationship Diagram and Data Dictionary
@@ -72,7 +74,7 @@ For a difference/effect size of 10% and Power of 80%, we will require:
 
 This means we cannot confidently say that we have an 80% chance of detecting a 10% difference between the 2 groups with our current sample size of **48,943.**  
 
-## RECOMMENDATIONS  
+## Recommendations  
 
 Our recommendation is that the banner should be launched. This is because of the following reasons:
 
