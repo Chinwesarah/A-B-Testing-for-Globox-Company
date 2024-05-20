@@ -34,10 +34,13 @@ The data gotten from the above query was used for the following visualizations i
 
 1. Compare the conversion rate and average amount spent between the test groups.
 See here: https://public.tableau.com/views/Comparingtheconversionrateandaverageamountspentbetweenthetestgroups/Sheet1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link
-3. Visualize the distribution of the amount spent per user for each group.
-4. The relationship between the test metrics (conversion rate and average amount spent) and the user’s device.
-5. The relationship between the test metrics (conversion rate and average amount spent) and the user’s gender.
-6. The relationship between the test metrics (conversion rate and average amount spent) and the user’s country.
+2. The distribution of the amount spent per user for each group.
+See here: https://public.tableau.com/views/Thedistributionoftheamountspentperuserforeachgroup_/Sheet2?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link
+3. The relationship between the test metrics (conversion rate and average amount spent) and the user’s device.
+See here: https://public.tableau.com/views/Exploretherelationshipbetweenthetestmetricsconversionrateandaverageamountspentandtheusersdevice_/Sheet3?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link
+4. The relationship between the test metrics (conversion rate and average amount spent) and the user’s gender.
+See here: https://public.tableau.com/views/Exploretherelationshipbetweenthetestmetricsconversionrateandaverageamountspentandtheusersgender_/Sheet4?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link
+5. The relationship between the test metrics (conversion rate and average amount spent) and the user’s country.
 See here: https://public.tableau.com/views/Visualizationstoexploretherelationshipbetweenthetestmetricsconversionrateandaverageamountspentandtheuserscountry/Sheet5?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link
 
 **Two Hypothesis tests** were further carried out to determine whether there is a statistically significant difference between the two groups and rule out the possibility that the above listed results were due to chance. For the difference in means (average amount spent per user), a two-tailed T-test with a 95% confidence level and 0.05 as threshold for statistical significance was conducted. For the difference in proportions (conversion rate), a two-tailed Z-test with a 95% confidence level and 0.05 as threshold for statistical significance was conducted.
