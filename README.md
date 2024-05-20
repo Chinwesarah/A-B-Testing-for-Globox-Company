@@ -53,8 +53,9 @@ See here: https://public.tableau.com/views/Visualizationstoexploretherelationshi
 **Average amount spent per user:** https://www.gigacalculator.com/calculators/power-sample-size-calculator.php  
 calcType=ss&eType=groups&type=cont&sType=cont&hyp=sup&diffType=abs&alpha=0.05&power=0.8&groups=1&ratio=1&inputType=prop&ssize=&prop=&mean=3.375&stdev=25.936&sinputType=prop&effect=0.3375&margin=0  
 
-## RESULTS
-# Hypothesis Tests
+## RESULTS  
+
+## Hypothesis Tests
 **Conversion rate:**
 The p-value obtained from our analysis is **0.0001**, which is much smaller than the significance level of 0.05. This low p-value indicates that the observed difference in conversion rates between the two groups is highly unlikely to be due to random chance alone. Therefore, we can confidently say that there is a statistically significant difference in conversion rates between the two groups.  
 
