@@ -32,11 +32,13 @@ id, groups.device, "group"
 
 The data gotten from the above query was used for the following visualizations in tableau:
 
-1. Compare the conversion rate and average amount spent between the test groups. 
-2. Visualize the distribution of the amount spent per user for each group.
-3. The relationship between the test metrics (conversion rate and average amount spent) and the user’s device.
-4. The relationship between the test metrics (conversion rate and average amount spent) and the user’s gender.
-5. The relationship between the test metrics (conversion rate and average amount spent) and the user’s country.
+1. Compare the conversion rate and average amount spent between the test groups.
+See here: https://public.tableau.com/views/Comparingtheconversionrateandaverageamountspentbetweenthetestgroups/Sheet1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link
+3. Visualize the distribution of the amount spent per user for each group.
+4. The relationship between the test metrics (conversion rate and average amount spent) and the user’s device.
+5. The relationship between the test metrics (conversion rate and average amount spent) and the user’s gender.
+6. The relationship between the test metrics (conversion rate and average amount spent) and the user’s country.
+See here: https://public.tableau.com/views/Visualizationstoexploretherelationshipbetweenthetestmetricsconversionrateandaverageamountspentandtheuserscountry/Sheet5?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link
 
 **Two Hypothesis tests** were further carried out to determine whether there is a statistically significant difference between the two groups and rule out the possibility that the above listed results were due to chance. For the difference in means (average amount spent per user), a two-tailed T-test with a 95% confidence level and 0.05 as threshold for statistical significance was conducted. For the difference in proportions (conversion rate), a two-tailed Z-test with a 95% confidence level and 0.05 as threshold for statistical significance was conducted.
 **Link to hypothesis testing:** https://docs.google.com/spreadsheets/d/1Q7qtdndJwJrzMmrkker17K1XQJRPFs-yMrqHFfi5tHA/edit?usp=drive_link  
