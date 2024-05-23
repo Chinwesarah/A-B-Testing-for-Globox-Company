@@ -78,7 +78,7 @@ This means we cannot confidently say that we have an 80% chance of detecting a 1
 
 Our recommendation is that the banner should be launched. This is because of the following reasons:
 
-1. One of the metrics (conversion rate) showed a statically significant increase in the
+1. One of the metrics (conversion rate) showed a statistically significant increase in the
 treatment group.
 2. The cost required to launch the banner is not expensive.
    
