@@ -22,14 +22,25 @@ Microsoft Powerpoint - Used for report presentation, kindly see attached.
 ## Data Analysis
 SQL code to extract the user ID, country, gender, device type, test group, and whether or not they converted (spent > $0) and how much they spent in total ($0+).
 ```sql
-SELECT
-id,
-COALESCE(country, 'Unknown') AS Country, COALESCE(gender, 'Unknown') AS Gender, COALESCE(groups.device, 'Unknown') AS Device, "group",
-SUM(COALESCE(spent, 0)) AS Amount_spent, CASE WHEN SUM(spent) > 0 THEN '1'
-ELSE '0' END AS conversion FROM
-users
-LEFT JOIN groups ON groups.uid = users.id LEFT JOIN activity ON users.id = activity.uid GROUP BY
-id, groups.device, "group"
+SELECT 
+    id,
+    COALESCE(country, 'Unknown') AS Country,
+    COALESCE(gender, 'Unknown') AS Gender,
+    COALESCE(groups.device, 'Unknown') AS Device,
+    "group",
+    SUM(COALESCE(spent, 0)) AS Amount_spent,
+    CASE 
+        WHEN SUM(spent) > 0 THEN '1'
+        ELSE '0' 
+    END AS conversion
+FROM
+    users
+LEFT JOIN 
+    groups ON groups.uid = users.id
+LEFT JOIN 
+    activity ON users.id = activity.uid
+GROUP BY
+    id, groups.device, "group";
 ```
 
 The data gotten from the above query was used for the following visualizations in tableau:
