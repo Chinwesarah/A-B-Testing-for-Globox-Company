@@ -22,7 +22,7 @@ Microsoft Powerpoint - Used for report presentation, kindly see attached.
 ## Data Analysis
 SQL code to extract the user ID, country, gender, device type, test group, and whether or not they converted (spent > $0) and how much they spent in total ($0+).  
 Code Explanation:  
-The columne _id, Country, Gender, Device, Group _ are all selected from the users and groups table
+The columns "id", 'Country', Gender, Device, Group are all selected from the users and groups table
 ```sql
 SELECT 
     id,
