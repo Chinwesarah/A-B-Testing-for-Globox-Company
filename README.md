@@ -9,7 +9,7 @@ spent per user.
 3. Users were assigned randomly to two groups, group A(control) and B(treatment).
 4. There was a total of 48,943 users, 24,343 in group A and 24,600 in group B.
 5. 955 users made purchase in group A and 1,139 in group B.
-6. The total amount spent by customers in group B was higher than group A with $1,269  The conversion rate in group B was higher than group A with 0.71%
+6. The total amount spent by customers in group B was higher than group A with $1,269. The conversion rate in group B was higher than group A with 0.71%
 ## Tools
 Postgresql - Used for data anlysis.  
 Google spreadsheet - Used for hypothesis testing.  
@@ -20,14 +20,14 @@ Microsoft Powerpoint - Used for report presentation, kindly see attached.
 1. Google spreadsheet( for the extracted table): https://docs.google.com/spreadsheets/d/1Q7qtdndJwJrzMmrkker17K1XQJRPFs-yMrqHFfi5tHA/edit?usp=drive_link
 2. Please refer to the attached Microsoft Word document for the original Entity Relationship Diagram and Data Dictionary
 ## Data Analysis
-SQL code to extract the user ID, country, gender, device type, test group, and whether or not they converted (spent > $0) and how much they spent in total ($0+).  
+**1. SQL code** to extract the user ID, country, gender, device type, test group, and whether or not they converted (spent > $0) and how much they spent in total ($0+).  
 Code Explanation:  
-The columns id, Country, Gender, Device, Group are all selected from the users, groups and activity tables  
-The tables are joined using LEFT JOIN on the id column  
-The COALESCE function is used to convert all null values in the selected columns to 'unknown'
-The amount spent column is also selected and is aggregated  
-To add a column that will indicate wheter or not a user converted, a CASE statemnent was used, the rows that have users that converted(where amount_spent is greater than 0) will return 1 and the rows that have users who did not convert(where amount_spent is 0) will return 0  
-Finally, the GROUP BY function 
+a. The columns id, Country, Gender, Device, Group are all selected from the users, groups and activity tables  
+b. The tables are joined using LEFT JOIN on the id column  
+c. The COALESCE function is used to convert all null values in the selected columns to 'unknown'
+d. The spent column is also selected and is aggregated  
+e. To add a column that will indicate wheter or not a user converted, a CASE statement was used, the rows that have users that converted(where spent is greater than 0) will return 1 and the rows that have users who did not convert(where spent is 0) will return 0  
+f. Finally, the results were GROUPED BY the id, device and group columns
 ```sql
 SELECT 
     users.id,
@@ -63,10 +63,10 @@ See here: https://public.tableau.com/views/Exploretherelationshipbetweenthetestm
 5. The relationship between the test metrics (conversion rate and average amount spent) and the user’s country.
 See here: https://public.tableau.com/views/Visualizationstoexploretherelationshipbetweenthetestmetricsconversionrateandaverageamountspentandtheuserscountry/Sheet5?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link
 
-**Two Hypothesis tests** were further carried out to determine whether there is a statistically significant difference between the two groups and rule out the possibility that the above listed results were due to chance. For the difference in means (average amount spent per user), a two-tailed T-test with a 95% confidence level and 0.05 as threshold for statistical significance was conducted. For the difference in proportions (conversion rate), a two-tailed Z-test with a 95% confidence level and 0.05 as threshold for statistical significance was conducted.
+**2.Two Hypothesis tests** were further carried out to determine whether there is a statistically significant difference between the two groups and rule out the possibility that the above listed results were due to chance. For the difference in means (average amount spent per user), a two-tailed T-test with a 95% confidence level and 0.05 as threshold for statistical significance was conducted. For the difference in proportions (conversion rate), a two-tailed Z-test with a 95% confidence level and 0.05 as threshold for statistical significance was conducted.
 **Link to hypothesis testing:** https://docs.google.com/spreadsheets/d/1Q7qtdndJwJrzMmrkker17K1XQJRPFs-yMrqHFfi5tHA/edit?usp=drive_link  
 
-**A power analysis** was also carried out to determine whether the total number of users (sample size) in the experiment was adequate to detect meaningful effects. The purpose of this analysis was to determine not only the statistical significance of the difference between the two groups but also how meaningful and practical it is in the real world. We wanted to check if our study had adequate number of users to confidently spot a difference between the two groups. We considered a difference of 10%, this is called the effect size, which is simply the difference we're looking for between Group A and Group B and it represents the smallest change or improvement we want our study to be able to detect. A Power of 80% was used, this is the probability that the study will correctly detect a true effect if it exists. 
+**3. A power analysis** was also carried out to determine whether the total number of users (sample size) in the experiment was adequate to detect meaningful effects. The purpose of this analysis was to determine not only the statistical significance of the difference between the two groups but also how meaningful and practical it is in the real world. We wanted to check if our study had adequate number of users to confidently spot a difference between the two groups. We considered a difference of 10%, this is called the effect size, which is simply the difference we're looking for between Group A and Group B and it represents the smallest change or improvement we want our study to be able to detect. A Power of 80% was used, this is the probability that the study will correctly detect a true effect if it exists. 
  
   **Link to sample size calculator used for the power analysis:**  
 **Conversion rate:** https://www.statsig.com/calculator?mde=10&bcr=3.92&twoSided=true&splitRatio=0.5&alpha=0.05&power=0.8  
