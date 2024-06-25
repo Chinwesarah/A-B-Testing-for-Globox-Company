@@ -22,10 +22,15 @@ Microsoft Powerpoint - Used for report presentation, kindly see attached.
 ## Data Analysis
 SQL code to extract the user ID, country, gender, device type, test group, and whether or not they converted (spent > $0) and how much they spent in total ($0+).  
 Code Explanation:  
-The columns "id", 'Country', Gender, Device, Group are all selected from the users and groups table
+The columns id, Country, Gender, Device, Group are all selected from the users, groups and activity tables  
+The tables are joined using LEFT JOIN on the id column  
+The COALESCE function is used to convert all null values in the selected columns to 'unknown'
+The amount spent column is also selected and is aggregated  
+To add a column that will indicate wheter or not a user converted, a CASE statemnent was used, the rows that have users that converted(where amount_spent is greater than 0) will return 1 and the rows that have users who did not convert(where amount_spent is 0) will return 0  
+Finally, the GROUP BY function 
 ```sql
 SELECT 
-    id,
+    users.id,
     COALESCE(country, 'Unknown') AS Country,
     COALESCE(gender, 'Unknown') AS Gender,
     COALESCE(groups.device, 'Unknown') AS Device,
