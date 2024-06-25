@@ -21,7 +21,7 @@ Microsoft Powerpoint - Used for report presentation, kindly see attached.
 2. Please refer to the attached Microsoft Word document for the original Entity Relationship Diagram and Data Dictionary
 ## Data Analysis
 **1. SQL code** to extract the user ID, country, gender, device type, test group, and whether or not they converted (spent > $0) and how much they spent in total ($0+).  
-Code Explanation:  
+**Code Explanation:**  
 a. The columns id, Country, Gender, Device, Group are all selected from the users, groups and activity tables  
 b. The tables are joined using LEFT JOIN on the id column  
 c. The COALESCE function is used to convert all null values in the selected columns to 'unknown'
