@@ -20,7 +20,9 @@ Microsoft Powerpoint - Used for report presentation, kindly see attached.
 1. Google spreadsheet( for the extracted table): https://docs.google.com/spreadsheets/d/1Q7qtdndJwJrzMmrkker17K1XQJRPFs-yMrqHFfi5tHA/edit?usp=drive_link
 2. Please refer to the attached Microsoft Word document for the original Entity Relationship Diagram and Data Dictionary
 ## Data Analysis
-SQL code to extract the user ID, country, gender, device type, test group, and whether or not they converted (spent > $0) and how much they spent in total ($0+).
+SQL code to extract the user ID, country, gender, device type, test group, and whether or not they converted (spent > $0) and how much they spent in total ($0+).  
+Code Explanation:  
+The columne _id, Country, Gender, Device, Group _ are all selected from the users and groups table
 ```sql
 SELECT 
     id,
